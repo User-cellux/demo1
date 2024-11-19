@@ -1,21 +1,106 @@
+/* Estilos generales */
 * {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-html, body {
   margin: 0;
-  border: 0;
   padding: 0;
-  background-color: #fff;
+  box-sizing: border-box;
 }
 
-main {
-  margin: auto;
-  width: 50%;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
   padding: 20px;
 }
 
-main > h1 {
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezado */
+.header {
   text-align: center;
-  font-size: 3.5em;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 36px;
+  color: #333;
+}
+
+.header .title {
+  font-size: 20px;
+  color: #777;
+}
+
+/* Secciones */
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+.job, .degree {
+  margin-bottom: 15px;
+}
+
+.job h3, .degree h3 {
+  font-size: 18px;
+  color: #333;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* Estilos para Contacto */
+.contact ul li,
+.skills ul li {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Estilos para la sección de habilidades */
+.skills ul {
+  padding-left: 20px;
+}
+
+.skills ul li {
+  list-style-type: disc;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .header h1 {
+    font-size: 28px;
+  }
+
+  .header .title {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
 }
